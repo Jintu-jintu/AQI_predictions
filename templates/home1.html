@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AQI category prediction</title>
+    <link rel="stylesheet" href="/static/css/style2.css">
+</head>
+<body background="/static/images/image2.jpg">
+<div class="input form">
+    <form action="{{url_for('predict')}}"method="post" id="input head">
+        <h1 id="heading">AQI Classification Form</h1>
+        <h3 id="input">Enter the required informations</h3>
+        <br>
+        
+        <label class="aqi" for="NO2 AQI">NO2 AQI</label><br>
+        <input type="text" name="no2aqi"><br>
+        
+        <label class="aqi" for="SO2 AQI">SO2 AQI</label><br>
+        <input type="text"  name="so2aqi">
+        <br>
+        
+        <label class="aqi" for="CO AQI"> CO AQI</label><br>
+        <input type="text"  name="coaqi">
+        <br>
+        
+        <label class="aqi" for="O3 AQI">O3 AQI</label><br>
+        <input type="text"  name="o3aqi">
+        <br>
+        <br>
+        
+        <button id="submit" type="submit" >Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
